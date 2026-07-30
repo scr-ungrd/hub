@@ -47,30 +47,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- INTERACTION LOGIC ---
 
-  // Real-time Search Engine
-  const filterResources = (query) => {
+  // Filter buttons & category state
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  let activeCategory = 'all';
+
+  // Real-time Search Engine & Category Filter
+  const filterResourcesCombined = () => {
+    const query = searchInput ? searchInput.value : '';
     const normalizedQuery = cleanText(query);
     let visibleCardsCount = 0;
 
-    if (normalizedQuery === '') {
-      // Reset search state
-      resourceItems.forEach(item => item.classList.remove('d-none'));
-      resourceSections.forEach(section => section.classList.remove('d-none'));
-      searchStatusSection.classList.add('d-none');
-      return;
-    }
-
-    // Filter cards
     resourceItems.forEach(item => {
+      const category = item.getAttribute('data-category') || '';
       const searchTerms = cleanText(item.getAttribute('data-search-terms') || '');
       const cardTitle = cleanText(item.querySelector('.card-resource-title')?.textContent || '');
       const cardText = cleanText(item.querySelector('.card-resource-text')?.textContent || '');
-      
-      const isMatch = searchTerms.includes(normalizedQuery) || 
-                      cardTitle.includes(normalizedQuery) || 
-                      cardText.includes(normalizedQuery);
-      
-      if (isMatch) {
+
+      const matchesCategory = (activeCategory === 'all') || (category === activeCategory);
+      const matchesSearch = (normalizedQuery === '') || 
+                            searchTerms.includes(normalizedQuery) || 
+                            cardTitle.includes(normalizedQuery) || 
+                            cardText.includes(normalizedQuery);
+
+      if (matchesCategory && matchesSearch) {
         item.classList.remove('d-none');
         visibleCardsCount++;
       } else {
@@ -91,15 +90,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Update screen status alert
-    searchStatusSection.classList.remove('d-none');
-    if (visibleCardsCount === 1) {
-      searchResultsText.textContent = `Se encontró 1 recurso para "${query}"`;
-    } else if (visibleCardsCount > 1) {
-      searchResultsText.textContent = `Se encontraron ${visibleCardsCount} recursos para "${query}"`;
+    if (normalizedQuery !== '' || activeCategory !== 'all') {
+      searchStatusSection.classList.remove('d-none');
+      let statusMsg = '';
+      if (normalizedQuery !== '') {
+        statusMsg += ` para "${query}"`;
+      }
+      if (activeCategory !== 'all') {
+        statusMsg += ` en la categoría seleccionada`;
+      }
+
+      if (visibleCardsCount === 1) {
+        searchResultsText.textContent = `Se encontró 1 recurso${statusMsg}`;
+      } else if (visibleCardsCount > 1) {
+        searchResultsText.textContent = `Se encontraron ${visibleCardsCount} recursos${statusMsg}`;
+      } else {
+        searchResultsText.textContent = `No se encontraron recursos${statusMsg}`;
+      }
     } else {
-      searchResultsText.textContent = `No se encontraron recursos para "${query}"`;
+      searchStatusSection.classList.add('d-none');
     }
   };
+
+  // Filter button click events
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeCategory = btn.getAttribute('data-filter') || 'all';
+      filterResourcesCombined();
+    });
+  });
 
   // Sync search inputs
   const handleSearchInput = (e) => {
@@ -109,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       if (searchInput) searchInput.value = value;
     }
-    filterResources(value);
+    filterResourcesCombined();
   };
 
   if (searchInput) searchInput.addEventListener('input', handleSearchInput);
@@ -120,7 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
     btnClearSearch.addEventListener('click', () => {
       if (searchInput) searchInput.value = '';
       if (searchInputMobile) searchInputMobile.value = '';
-      filterResources('');
+      activeCategory = 'all';
+      filterBtns.forEach(b => {
+        if (b.getAttribute('data-filter') === 'all') b.classList.add('active');
+        else b.classList.remove('active');
+      });
+      filterResourcesCombined();
     });
   }
 
