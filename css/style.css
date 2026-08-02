@@ -283,6 +283,35 @@ main {
   border-color: var(--color-primary-light);
 }
 
+/* Category Section Dividers */
+.category-header {
+  margin-top: 1rem;
+}
+
+.category-title {
+  font-weight: 700;
+  color: var(--text-main);
+  font-size: 1.25rem;
+  letter-spacing: -0.3px;
+}
+
+.category-divider-line {
+  height: 3px;
+  width: 100%;
+  background-color: #087283;
+  border-radius: 2px;
+  margin-top: 6px;
+  box-shadow: 0 1px 2px rgba(8, 114, 131, 0.2);
+}
+
+[data-theme="dark"] .category-divider-line {
+  background-color: #0d9488;
+}
+
+body.high-contrast .category-divider-line {
+  background-color: #ffff00 !important;
+}
+
 /* Modern Module Cards (SNI Style Layout) */
 .resource-card {
   height: 100%;
@@ -307,6 +336,10 @@ main {
 [data-theme="dark"] .resource-card:hover {
   border-color: rgba(250, 199, 24, 0.4);
   box-shadow: 0 16px 30px -8px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .resource-card:hover .card-resource-title {
+  color: var(--color-accent);
 }
 
 /* Special Featured Styling for SNI (First Card) */

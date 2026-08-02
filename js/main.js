@@ -28,9 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnFontReset = document.getElementById('btn-font-reset');
   const btnFontIncrease = document.getElementById('btn-font-increase');
 
-  // Resource sections and items
+  // Resource sections, category blocks and items
   const resourceItems = document.querySelectorAll('.resource-card-item');
   const resourceSections = document.querySelectorAll('.resource-section');
+  const categoryBlocks = document.querySelectorAll('.category-block');
 
   // --- STATE ---
   let currentFontScale = parseFloat(localStorage.getItem('accessibilityFontScale')) || 1.0;
@@ -74,6 +75,20 @@ document.addEventListener('DOMContentLoaded', () => {
         visibleCardsCount++;
       } else {
         item.classList.add('d-none');
+      }
+    });
+
+    // Filter category blocks (Hide blocks with no visible cards or not matching filter)
+    categoryBlocks.forEach(block => {
+      const blockCategory = block.getAttribute('data-category-block');
+      const blockCards = block.querySelectorAll('.resource-card-item');
+      const hasVisibleCards = Array.from(blockCards).some(card => !card.classList.contains('d-none'));
+      const matchesFilter = (activeCategory === 'all') || (blockCategory === activeCategory);
+
+      if (hasVisibleCards && matchesFilter) {
+        block.classList.remove('d-none');
+      } else {
+        block.classList.add('d-none');
       }
     });
 
