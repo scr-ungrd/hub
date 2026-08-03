@@ -488,6 +488,12 @@ body.high-contrast .category-divider-line {
   border: 1px solid rgba(71, 85, 105, 0.2);
 }
 
+.badge-cuadernos {
+  background-color: rgba(79, 70, 229, 0.1) !important;
+  color: #4f46e5 !important;
+  border: 1px solid rgba(79, 70, 229, 0.2);
+}
+
 /* Card Body Content */
 .card-body-content {
   display: flex;
