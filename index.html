@@ -166,8 +166,7 @@
         <div class="col-lg-8 col-md-12 text-white">
           <h1 class="hero-title" id="hero-title">Catálogo de accesos directos, herramientas, aplicaciones y publicaciones</h1>
           <p class="hero-subtitle">
-            Conjunto de accesos directos a las plataformas, visores, aplicaciones e investigaciones desarrolladas por la
-            Subdirección para el Conocimiento del Riesgo.
+            Subdirección para el Conocimiento del Riesgo
           </p>
         </div>
         <div class="col-lg-4 d-none d-lg-flex justify-content-center">
@@ -208,13 +207,14 @@
 
         <!-- Category Filter Pills -->
         <div class="filter-container" role="tablist" aria-label="Filtrar por categoría">
-          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos (14)</button>
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos (16)</button>
           <button class="filter-btn" data-filter="accesos" role="tab" aria-selected="false">Accesos Directos</button>
           <button class="filter-btn" data-filter="herramientas" role="tab" aria-selected="false">Herramientas y
             Aplicaciones</button>
           <button class="filter-btn" data-filter="publicaciones" role="tab" aria-selected="false">Publicaciones
             Digitales</button>
           <button class="filter-btn" data-filter="catalogo" role="tab" aria-selected="false">Catálogo Editorial</button>
+          <button class="filter-btn" data-filter="magma" role="tab" aria-selected="false">Magma y Proyectos</button>
           <button class="filter-btn" data-filter="memorias" role="tab" aria-selected="false">Memorias
             Institucionales</button>
         </div>
@@ -436,10 +436,41 @@
       <!-- CATEGORY 3: Publicaciones digitales -->
       <div class="category-block mb-5" data-category-block="publicaciones">
         <div class="category-header mb-4">
-          <h3 class="category-title h4 mb-2">3. Publicaciones digitales</h3>
+          <h3 class="category-title h4 mb-2">3. Catalogo editorial y publicaciones digitales</h3>
           <div class="category-divider-line"></div>
         </div>
         <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+          <!-- CARD: Catálogo editorial -->
+          <div class="col resource-card-item" data-category="catalogo"
+            data-search-terms="catalogo editorial publicaciones libros impresos publicaciones scr ungrd repositorio">
+            <article class="resource-card">
+              <div class="card-header-top">
+                <span class="badge badge-sni">CATÁLOGO EDITORIAL</span>
+              </div>
+              <div class="card-icon-centered">
+                <img src="assets/svg/ibm-knowledge-catalog.svg" alt="Ícono Catálogo editorial" class="card-svg-icon"
+                  loading="lazy">
+              </div>
+              <div class="card-body-content">
+                <h4 class="card-resource-title text-center">Catálogo editorial</h4>
+                <p class="card-resource-text text-center">
+                  Catálogo completo de publicaciones e impresos editoriales desarrollados por la Subdirección.
+                </p>
+                <div class="card-footer-action">
+                  <a href="https://scr-ungrd.github.io/catalogo-publicaciones/" target="_blank" rel="noopener" class="card-btn"
+                    aria-label="Ver catálogo editorial en una nueva pestaña">
+                    <span>Ver catálogo</span>
+                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
 
           <!-- CARD: Libros de investigaciones en GRD -->
           <div class="col resource-card-item" data-category="publicaciones"
@@ -635,34 +666,33 @@
         </div>
       </div>
 
-      <!-- CATEGORY 4: Catálogo editorial -->
-      <div class="category-block mb-5" data-category-block="catalogo">
+      <!-- CATEGORY 4: Museo Magma y Proyectos en Conocimiento del Riesgo -->
+      <div class="category-block mb-5" data-category-block="magma">
         <div class="category-header mb-4">
-          <h3 class="category-title h4 mb-2">4. Catálogo editorial</h3>
+          <h3 class="category-title h4 mb-2">4. Museo Magma y Proyectos en Conocimiento del Riesgo</h3>
           <div class="category-divider-line"></div>
         </div>
         <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
-          <!-- CARD: Catálogo editorial -->
-          <div class="col resource-card-item" data-category="catalogo"
-            data-search-terms="catalogo editorial publicaciones libros impresos publicaciones scr ungrd repositorio">
+          <!-- CARD: Magma -->
+          <div class="col resource-card-item" data-category="magma"
+            data-search-terms="magma museo interactivo del riesgo proyectos portal gestion riesgo">
             <article class="resource-card">
               <div class="card-header-top">
-                <span class="badge badge-sni">CATÁLOGO EDITORIAL</span>
+                <span class="badge badge-magma">MAGMA</span>
               </div>
               <div class="card-icon-centered">
-                <img src="assets/svg/ibm-knowledge-catalog.svg" alt="Ícono Catálogo editorial" class="card-svg-icon"
+                <img src="assets/logos/magma-logo-teal.png" alt="Logotipo Magma" class="card-svg-icon card-svg-icon-magma"
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Catálogo editorial</h4>
                 <p class="card-resource-text text-center">
-                  Catálogo completo de publicaciones e impresos editoriales desarrollados por la Subdirección.
+                  Museo Interactivo del Riesgo
                 </p>
                 <div class="card-footer-action">
-                  <a href="https://scr-ungrd.github.io/catalogo-publicaciones/" target="_blank" rel="noopener" class="card-btn"
-                    aria-label="Ver catálogo editorial en una nueva pestaña">
-                    <span>Ver catálogo</span>
+                  <a href="https://portal.gestiondelriesgo.gov.co/magma/" target="_blank" rel="noopener"
+                    class="card-btn" aria-label="Abrir portal Magma en una nueva pestaña">
+                    <span>Abrir Magma</span>
                     <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                       <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -677,10 +707,10 @@
         </div>
       </div>
 
-      <!-- CATEGORY 5: Memorias institucionales -->
+      <!-- CATEGORY 5: Memorias de eventos -->
       <div class="category-block mb-5" data-category-block="memorias">
         <div class="category-header mb-4">
-          <h3 class="category-title h4 mb-2">5. Memorias institucionales</h3>
+          <h3 class="category-title h4 mb-2">5. Memorias de eventos</h3>
           <div class="category-divider-line"></div>
         </div>
         <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">

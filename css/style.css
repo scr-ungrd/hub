@@ -413,6 +413,11 @@ body.high-contrast .category-divider-line {
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
 }
 
+.card-svg-icon-magma {
+  width: 192px;
+  height: 192px;
+}
+
 .resource-card:hover .card-svg-icon {
   transform: scale(1.14) translateY(-3px);
   filter: drop-shadow(0 8px 12px rgba(34, 55, 100, 0.2));
@@ -492,6 +497,12 @@ body.high-contrast .category-divider-line {
   background-color: rgba(79, 70, 229, 0.1) !important;
   color: #4f46e5 !important;
   border: 1px solid rgba(79, 70, 229, 0.2);
+}
+
+.badge-magma {
+  background-color: rgba(220, 38, 38, 0.1) !important;
+  color: #dc2626 !important;
+  border: 1px solid rgba(220, 38, 38, 0.2);
 }
 
 /* Card Body Content */
