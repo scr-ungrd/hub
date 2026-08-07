@@ -363,21 +363,6 @@ body.high-contrast .category-divider-line {
   box-shadow: 0 18px 36px -6px rgba(250, 199, 24, 0.3) !important;
 }
 
-.featured-sni-tag {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  background: var(--color-accent);
-  color: #000000;
-  font-size: 0.65rem;
-  font-weight: 800;
-  letter-spacing: 0.8px;
-  padding: 3px 10px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  text-transform: uppercase;
-}
-
 /* Card Header: SVG Icon Box + Badge */
 /* Top Warning Disclaimer Alert (Single sentence at top) */
 .alert-warning-top {
