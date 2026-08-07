@@ -61,13 +61,14 @@
 
   <!-- Header (GitBook Inspired) -->
   <header class="navbar navbar-expand-lg sticky-top main-header" role="banner">
-    <div class="container      <!-- Brand Logo & Titles -->
-      <a class=" navbar-brand d-flex align-items-center me-3" href="#" aria-label="Inicio HUB SCR UNGRD">
-      <img src="assets/logos/Logo-UNGRD.png" alt="Logotipo Oficial UNGRD" class="header-logo me-2" loading="eager">
-      <div class="brand-text d-none d-sm-block">
-        <span class="hub-title d-block">HUB SCR</span>
-        <span class="hub-subtitle d-block">Catálogo de herramientas, aplicaciones y publicaciones</span>
-      </div>
+    <div class="container">
+      <!-- Brand Logo & Titles -->
+      <a class="navbar-brand d-flex align-items-center me-3" href="#" aria-label="Inicio HUB SCR UNGRD">
+        <img src="assets/logos/Logo-UNGRD.png" alt="Logotipo Oficial UNGRD" class="header-logo me-2" loading="eager">
+        <div class="brand-text d-none d-sm-block">
+          <span class="hub-title d-block">HUB SCR</span>
+          <span class="hub-subtitle d-block">Catálogo de herramientas, aplicaciones y publicaciones</span>
+        </div>
       </a>
 
       <!-- Center Search Bar (Always visible on Desktop) -->
@@ -98,6 +99,16 @@
             </li>
           </ul>
         </nav>
+
+        <!-- GitHub Repository Link -->
+        <a class="btn btn-header-icon me-2" href="https://github.com/scr-ungrd/hub" target="_blank" rel="noopener"
+          aria-label="Ver repositorio en GitHub">
+          <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+            </path>
+          </svg>
+        </a>
 
         <!-- Dark Mode Toggle -->
         <button class="btn btn-header-icon me-2" id="theme-toggle-btn" aria-label="Cambiar tema de color">
@@ -226,15 +237,12 @@
           <h3 class="category-title h4 mb-2">1. Accesos directos a recursos institucionales</h3>
           <div class="category-divider-line"></div>
         </div>
-        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="row g-4 row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
           <!-- CARD: Web Principal UNGRD -->
           <div class="col resource-card-item" data-category="accesos"
             data-search-terms="pagina web principal ungrd portal oficial unidad nacional gestion del riesgo desastres colombia">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-sni">PORTAL OFICIAL</span>
-              </div>
+            <a class="resource-card" href="https://portal.gestiondelriesgo.gov.co" target="_blank" rel="noopener" aria-label="Ingresar al portal web de la UNGRD en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/svg/world-check.svg" alt="Ícono Página web principal de la UNGRD" class="card-svg-icon"
                   loading="lazy">
@@ -244,29 +252,15 @@
                 <p class="card-resource-text text-center">
                   Portal oficial de la Unidad Nacional para la Gestión del Riesgo de Desastres.
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://portal.gestiondelriesgo.gov.co" target="_blank" rel="noopener" class="card-btn"
-                    aria-label="Ingresar al portal web de la UNGRD en una nueva pestaña">
-                    <span>Ingresar</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
           <!-- CARD: SNI -->
           <div class="col resource-card-item" data-category="accesos"
             data-search-terms="sni sistema nacional informacion gestion del riesgo ungrd portal oficial snigrd">
-            <article class="resource-card featured-sni-card">
+            <a class="resource-card featured-sni-card" href="https://sni.gestiondelriesgo.gov.co" target="_blank" rel="noopener" aria-label="Ingresar al portal oficial SNI en una nueva pestaña">
               <span class="featured-sni-tag">Principal</span>
-              <div class="card-header-top">
-                <span class="badge badge-sni">SISTEMA NACIONAL</span>
-              </div>
               <div class="card-icon-centered">
                 <img src="assets/svg/square-3-stack-3d.svg" alt="Ícono Sistema Nacional SNI" class="card-svg-icon"
                   loading="lazy">
@@ -277,28 +271,14 @@
                   Plataforma oficial del Sistema Nacional de Información para la Gestión del Riesgo de Desastres en
                   Colombia (SNIGRD).
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://sni.gestiondelriesgo.gov.co" target="_blank" rel="noopener" class="card-btn"
-                    aria-label="Ingresar al portal oficial SNI en una nueva pestaña">
-                    <span>Ingresar al SNI</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
           <!-- CARD: Página Subdirección para el Conocimiento del Riesgo -->
           <div class="col resource-card-item" data-category="accesos"
             data-search-terms="pagina del conocimiento del riesgo subdireccion scr ungrd portal google sites inicio">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-guia-ciudadana">SCR UNGRD</span>
-              </div>
+            <a class="resource-card" href="https://sites.google.com/gestiondelriesgo.gov.co/scr/inicio" target="_blank" rel="noopener" aria-label="Ingresar a la página del Conocimiento del Riesgo en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/svg/book-open-bookmark-3.svg" alt="Ícono Página web de la Subdirección para el Conocimiento del Riesgo"
                   class="card-svg-icon" loading="lazy">
@@ -308,28 +288,14 @@
                 <p class="card-resource-text text-center">
                   Sitio web y recursos de la Subdirección para el Conocimiento del Riesgo (SCR).
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://sites.google.com/gestiondelriesgo.gov.co/scr/inicio" target="_blank" rel="noopener"
-                    class="card-btn" aria-label="Ingresar a la página del Conocimiento del Riesgo en una nueva pestaña">
-                    <span>Explorar</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
           <!-- CARD: Biblioteca digital UNGRD -->
           <div class="col resource-card-item" data-category="accesos"
             data-search-terms="biblioteca digital repositorio ungrd publicaciones documentos tecnicos investigaciones">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-investigaciones">REPOSITORIO DIGITAL</span>
-              </div>
+            <a class="resource-card" href="http://repositorio.gestiondelriesgo.gov.co" target="_blank" rel="noopener" aria-label="Ingresar a la Biblioteca Digital en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/svg/book-encyclopedia-1.svg" alt="Ícono Biblioteca digital" class="card-svg-icon"
                   loading="lazy">
@@ -339,19 +305,8 @@
                 <p class="card-resource-text text-center">
                   Repositorio institucional de publicaciones, documentos técnicos e investigaciones en GRD.
                 </p>
-                <div class="card-footer-action">
-                  <a href="http://repositorio.gestiondelriesgo.gov.co" target="_blank" rel="noopener" class="card-btn"
-                    aria-label="Ingresar a la Biblioteca Digital en una nueva pestaña">
-                    <span>Ir a biblioteca</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
         </div>
@@ -363,15 +318,12 @@
           <h3 class="category-title h4 mb-2">2. Herramientas y aplicaciones</h3>
           <div class="category-divider-line"></div>
         </div>
-        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="row g-4 row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
           <!-- CARD: Riesgos de los volcanes -->
           <div class="col resource-card-item" data-category="herramientas"
             data-search-terms="riesgos de los volcanes galeras volcan riesgo implicito visor geografico mapas 3d">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-visor">VISOR GEOGRÁFICO</span>
-              </div>
+            <a class="resource-card" href="https://scr-ungrd.github.io/visor-riesgoimplicito-volcangaleras/" target="_blank" rel="noopener" aria-label="Abrir visor de Riesgo Implícito Volcán Galeras en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/svg/volcano.svg" alt="Ícono Riesgos de los volcanes" class="card-svg-icon"
                   loading="lazy">
@@ -382,29 +334,14 @@
                   Visor interactivo para la evaluación del riesgo implícito asociado al volcán Galeras, con mapas
                   tridimensionales.
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://scr-ungrd.github.io/visor-riesgoimplicito-volcangaleras/" target="_blank"
-                    rel="noopener" class="card-btn"
-                    aria-label="Abrir visor de Riesgo Implícito Volcán Galeras en una nueva pestaña">
-                    <span>Abrir visor</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
           <!-- CARD: Incendios -->
           <div class="col resource-card-item" data-category="herramientas"
             data-search-terms="incendios colombia monitoreo focos termicos cobertura vegetal satelital active fire wfs">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-monitoreo">MONITOREO</span>
-              </div>
+            <a class="resource-card" href="https://incendios-colombia-wfs.streamlit.app/" target="_blank" rel="noopener" aria-label="Abrir aplicación de Monitoreo de Incendios en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/svg/pine-tree-fire.svg" alt="Ícono Incendios Colombia" class="card-svg-icon"
                   loading="lazy">
@@ -415,19 +352,8 @@
                   Monitoreo y visualización en tiempo real de eventos de incendios en cobertura vegetal vía datos
                   satelitales.
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://incendios-colombia-wfs.streamlit.app/" target="_blank" rel="noopener"
-                    class="card-btn" aria-label="Abrir aplicación de Monitoreo de Incendios en una nueva pestaña">
-                    <span>Abrir aplicación</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
         </div>
@@ -439,15 +365,12 @@
           <h3 class="category-title h4 mb-2">3. Catalogo editorial y publicaciones digitales</h3>
           <div class="category-divider-line"></div>
         </div>
-        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="row g-4 row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
           <!-- CARD: Catálogo editorial -->
           <div class="col resource-card-item" data-category="catalogo"
             data-search-terms="catalogo editorial publicaciones libros impresos publicaciones scr ungrd repositorio">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-sni">CATÁLOGO EDITORIAL</span>
-              </div>
+            <a class="resource-card" href="https://scr-ungrd.github.io/catalogo-publicaciones/" target="_blank" rel="noopener" aria-label="Ver catálogo editorial en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/svg/ibm-knowledge-catalog.svg" alt="Ícono Catálogo editorial" class="card-svg-icon"
                   loading="lazy">
@@ -457,28 +380,14 @@
                 <p class="card-resource-text text-center">
                   Catálogo completo de publicaciones e impresos editoriales desarrollados por la Subdirección.
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://scr-ungrd.github.io/catalogo-publicaciones/" target="_blank" rel="noopener" class="card-btn"
-                    aria-label="Ver catálogo editorial en una nueva pestaña">
-                    <span>Ver catálogo</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
           <!-- CARD: Libros de investigaciones en GRD -->
           <div class="col resource-card-item" data-category="publicaciones"
             data-search-terms="libros de investigacion biblioteca ciencia estudios amenazas vulnerabilidad colombia grd">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-investigaciones">INVESTIGACIONES</span>
-              </div>
+            <a class="resource-card" href="https://scr-ungrd.github.io/investigaciones-grd-colombia/" target="_blank" rel="noopener" aria-label="Explorar publicaciones e investigaciones GRD en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/svg/book-encyclopedia-1.svg" alt="Ícono Libros de investigación" class="card-svg-icon"
                   loading="lazy">
@@ -488,29 +397,15 @@
                 <p class="card-resource-text text-center">
                   Colección de la serie Investigaciones en Gestión del Riesgo de Desastres para Colombia.
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://scr-ungrd.github.io/investigaciones-grd-colombia/" target="_blank" rel="noopener"
-                    class="card-btn" aria-label="Explorar publicaciones e investigaciones GRD en una nueva pestaña">
-                    <span>Explorar</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
 
           <!-- CARD: Aplicaciones SIG -->
           <div class="col resource-card-item" data-category="publicaciones"
             data-search-terms="aplicaciones sig grd sistemas informacion geografica mapas capas guias tecnicas qgis arcgis">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-guia-tecnica">GUÍA TÉCNICA</span>
-              </div>
+            <a class="resource-card" href="https://scr-ungrd.github.io/aplicacion-sig-grd/" target="_blank" rel="noopener" aria-label="Abrir guía de Aplicación SIG en GRD en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/svg/book-open-bookmark-3.svg" alt="Ícono Aplicaciones SIG" class="card-svg-icon"
                   loading="lazy">
@@ -520,28 +415,14 @@
                 <p class="card-resource-text text-center">
                   Guía práctica y metodológica para la aplicación de Sistemas de Información Geográfica en GRD.
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://scr-ungrd.github.io/aplicacion-sig-grd/" target="_blank" rel="noopener"
-                    class="card-btn" aria-label="Abrir guía de Aplicación SIG en GRD en una nueva pestaña">
-                    <span>Abrir guía</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
           <!-- CARD: Conociendo ... -->
           <div class="col resource-card-item" data-category="publicaciones"
             data-search-terms="conociendo el riesgo aguas escorrentia lluvias escorrentias laderas viviendas guia ciudadana">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-guia-ciudadana">GUÍA CIUDADANA</span>
-              </div>
+            <a class="resource-card" href="https://scr-ungrd.github.io/conociendo-el-riesgo-aguas-escorrentia/" target="_blank" rel="noopener" aria-label="Explorar guía ciudadana de aguas de escorrentía en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/svg/book-pencil.svg" alt="Ícono Conociendo el Riesgo" class="card-svg-icon"
                   loading="lazy">
@@ -552,29 +433,14 @@
                   Guía ilustrada didáctica para comprender el riesgo derivado de aguas de escorrentía en laderas y su
                   mitigación.
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://scr-ungrd.github.io/conociendo-el-riesgo-aguas-escorrentia/" target="_blank"
-                    rel="noopener" class="card-btn"
-                    aria-label="Explorar guía ciudadana de aguas de escorrentía en una nueva pestaña">
-                    <span>Explorar guía</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
           <!-- CARD: Cuadernos reproducibles -->
           <div class="col resource-card-item" data-category="publicaciones"
             data-search-terms="cuadernos reproducibles reproducibilidad jupyter notebooks codigo abierto ciencia datos investigacion">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-cuadernos">CUADERNOS</span>
-              </div>
+            <a class="resource-card" href="https://scr-ungrd.github.io/cuadernos-reproducibles/" target="_blank" rel="noopener" aria-label="Explorar cuadernos reproducibles en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/svg/notebook-play.svg" alt="Ícono Cuadernos reproducibles" class="card-svg-icon"
                   loading="lazy">
@@ -584,28 +450,14 @@
                 <p class="card-resource-text text-center">
                   Colección de cuadernos de código abierto sobre análisis de riesgos de desastres.
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://scr-ungrd.github.io/cuadernos-reproducibles/" target="_blank" rel="noopener"
-                    class="card-btn" aria-label="Explorar cuadernos reproducibles en una nueva pestaña">
-                    <span>Explorar cuadernos</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
           <!-- CARD: Fichas departamentales de caracterización de escenarios -->
           <div class="col resource-card-item" data-category="publicaciones"
             data-search-terms="fichas departamentales escenarios riesgo planificacion departamentos colombia">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-fichas">FICHAS</span>
-              </div>
+            <a class="resource-card" href="https://scr-ungrd.github.io/fichas-departamentales-escenarios-riesgo/" target="_blank" rel="noopener" aria-label="Consultar fichas departamentales en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/svg/squares-four-thin.svg" alt="Ícono Fichas departamentales" class="card-svg-icon"
                   loading="lazy">
@@ -616,28 +468,14 @@
                   Escenarios de riesgo por departamento para apoyar la planificación territorial y toma de
                   decisiones.
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://scr-ungrd.github.io/fichas-departamentales-escenarios-riesgo/" target="_blank"
-                    rel="noopener" class="card-btn" aria-label="Consultar fichas departamentales en una nueva pestaña">
-                    <span>Consultar fichas</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
           <!-- CARD: Estrategia -->
           <div class="col resource-card-item" data-category="publicaciones"
             data-search-terms="estrategia nacional ciencia tecnologia innovacion lineamientos politicas publicas cti grd">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-estrategia">ESTRATEGIA</span>
-              </div>
+            <a class="resource-card" href="https://scr-ungrd.github.io/estrategia-ciencia-grd/" target="_blank" rel="noopener" aria-label="Consultar documento de Estrategia Nacional de Ciencia en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/svg/flowchart-3.svg" alt="Ícono Estrategia Nacional de Ciencia" class="card-svg-icon"
                   loading="lazy">
@@ -647,20 +485,8 @@
                 <p class="card-resource-text text-center">
                   Panorama interactivo de indicadores de ciencia y tecnología de Colombia en GRD.
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://scr-ungrd.github.io/estrategia-ciencia-grd/" target="_blank" rel="noopener"
-                    class="card-btn"
-                    aria-label="Consultar documento de Estrategia Nacional de Ciencia en una nueva pestaña">
-                    <span>Consultar estrategia</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
         </div>
@@ -672,15 +498,12 @@
           <h3 class="category-title h4 mb-2">4. Museo Magma y Proyectos en Conocimiento del Riesgo</h3>
           <div class="category-divider-line"></div>
         </div>
-        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="row g-4 row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
           <!-- CARD: Magma -->
           <div class="col resource-card-item" data-category="magma"
             data-search-terms="magma museo interactivo del riesgo proyectos portal gestion riesgo">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-magma">MAGMA</span>
-              </div>
+            <a class="resource-card" href="https://portal.gestiondelriesgo.gov.co/magma/" target="_blank" rel="noopener" aria-label="Abrir portal Magma en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/logos/magma-logo-teal.png" alt="Logotipo Magma" class="card-svg-icon card-svg-icon-magma"
                   loading="lazy">
@@ -689,19 +512,8 @@
                 <p class="card-resource-text text-center">
                   Museo Interactivo del Riesgo
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://portal.gestiondelriesgo.gov.co/magma/" target="_blank" rel="noopener"
-                    class="card-btn" aria-label="Abrir portal Magma en una nueva pestaña">
-                    <span>Abrir Magma</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
         </div>
@@ -713,15 +525,12 @@
           <h3 class="category-title h4 mb-2">5. Memorias de eventos</h3>
           <div class="category-divider-line"></div>
         </div>
-        <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class="row g-4 row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
           <!-- CARD: Memorias PN26 -->
           <div class="col resource-card-item" data-category="memorias"
             data-search-terms="memorias pn26 proceso nacional de conocimiento encuentros eventos 2026 ungrd">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-memorias">MEMORIAS</span>
-              </div>
+            <a class="resource-card" href="https://scr-ungrd.github.io/memorias-pn26/" target="_blank" rel="noopener" aria-label="Ver memorias del Proceso Nacional PN26 en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/logos/pn26-teal.png" alt="Logotipo Plataforma Nacional PN26" class="card-svg-icon"
                   loading="lazy">
@@ -732,28 +541,14 @@
                   Sistematización de aportes del Proceso Nacional de Conocimiento para la Gestión del Riesgo de
                   Desastres 2026.
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://scr-ungrd.github.io/memorias-pn26/" target="_blank" rel="noopener" class="card-btn"
-                    aria-label="Ver memorias del Proceso Nacional PN26 en una nueva pestaña">
-                    <span>Ver memorias</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
           <!-- CARD: Memorias IDRiM 2024 -->
           <div class="col resource-card-item" data-category="memorias"
             data-search-terms="memorias idrim 2024 colombia sociedad internacional integracion gestion riesgo de desastres encuentro cientifico">
-            <article class="resource-card">
-              <div class="card-header-top">
-                <span class="badge badge-memorias">MEMORIAS</span>
-              </div>
+            <a class="resource-card" href="https://scr-ungrd.github.io/memorias-idrim-2024-colombia/" target="_blank" rel="noopener" aria-label="Ver memorias del encuentro internacional IDRiM en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/logos/idrim-teal.png" alt="Logotipo 14° IDRiM 2024" class="card-svg-icon"
                   loading="lazy">
@@ -764,19 +559,8 @@
                   Memorias y ponencias científicas del Encuentro de la Sociedad Internacional para la Gestión Integrada
                   (IDRiM 2024).
                 </p>
-                <div class="card-footer-action">
-                  <a href="https://scr-ungrd.github.io/memorias-idrim-2024-colombia/" target="_blank" rel="noopener"
-                    class="card-btn" aria-label="Ver memorias del encuentro internacional IDRiM en una nueva pestaña">
-                    <span>Ver memorias</span>
-                    <svg class="btn-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </article>
+            </a>
           </div>
 
         </div>
@@ -789,66 +573,9 @@
   </main>
 
   <!-- Complete Footer -->
-  <footer class="main-footer pt-5 pb-4" role="contentinfo">
+  <footer class="main-footer pt-4 pb-4" role="contentinfo">
     <div class="container-fluid px-md-5 px-3">
-      <div class="row g-4">
-        <!-- Logo & Info Column -->
-        <div class="col-md-6 col-12">
-          <div class="d-flex align-items-center mb-3">
-            <img src="assets/logos/mano_ungrd.png" alt="Logotipo oficial de la UNGRD en el pie de página"
-              class="footer-logo me-2">
-            <div class="text-white">
-              <span class="hub-title d-block fs-5 font-weight-bold">HUB SCR</span>
-              <span class="hub-subtitle d-block opacity-75 font-size-xs">Conocimiento del Riesgo</span>
-            </div>
-          </div>
-          <p class="footer-text font-size-sm opacity-75 mb-0">
-            Unidad Nacional para la Gestión del Riesgo de Desastres.<br>
-            Subdirección para el Conocimiento del Riesgo.<br>
-            Presidencia de la República de Colombia.
-          </p>
-        </div>
-
-        <!-- Contact & Social networks -->
-        <div class="col-md-6 col-12">
-          <h4 class="footer-col-title font-size-sm font-weight-bold">Contacto &amp; Redes</h4>
-          <p class="footer-text font-size-sm opacity-75 mb-2">
-            Bogotá, D.C., Colombia | Avenida Calle 26 No. 92-34<br>
-            Correo: contactenos@gestiondelriesgo.gov.co
-          </p>
-          <div class="d-flex gap-3 mt-2">
-            <a href="https://x.com/UNGRD" target="_blank" rel="noopener" class="social-icon-btn"
-              aria-label="Síguenos en X / Twitter">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path
-                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
-                </path>
-              </svg>
-            </a>
-            <a href="https://co.linkedin.com/company/ungrd" target="_blank" rel="noopener" class="social-icon-btn"
-              aria-label="Síguenos en LinkedIn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </a>
-            <a href="https://www.youtube.com/c/UNGRDColombia" target="_blank" rel="noopener" class="social-icon-btn"
-              aria-label="Visita nuestro canal de YouTube">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path
-                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
-                </path>
-                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="row mt-4 pt-4 border-top border-white border-opacity-10 align-items-center">
+      <div class="row align-items-center">
         <div class="col-12 text-center">
           <p class="footer-text font-size-xs opacity-50 mb-0">
             &copy; 2026 Subdirección para el Conocimiento del Riesgo - UNGRD. Todos los derechos reservados.

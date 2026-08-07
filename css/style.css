@@ -322,9 +322,18 @@ body.high-contrast .category-divider-line {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
-  padding: 22px;
+  padding: 15px;
   position: relative;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+
+.resource-card:hover,
+.resource-card:focus {
+  text-decoration: none;
+  color: inherit;
 }
 
 .resource-card:hover {
@@ -387,122 +396,31 @@ body.high-contrast .category-divider-line {
   color: #f1f5f9;
 }
 
-/* Card Top Header: Badge on top right or centered */
-.card-header-top {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-bottom: 8px;
-  min-height: 24px;
-}
-
 /* Standalone Centered SVG Icon (No Box, Larger Size) */
 .card-icon-centered {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 8px auto 16px auto;
+  margin: 6px auto 11px auto;
   width: 100%;
 }
 
 .card-svg-icon {
-  width: 64px;
-  height: 64px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.08));
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
 }
 
 .card-svg-icon-magma {
-  width: 192px;
-  height: 192px;
+  width: 134px;
+  height: 134px;
 }
 
 .resource-card:hover .card-svg-icon {
   transform: scale(1.14) translateY(-3px);
   filter: drop-shadow(0 8px 12px rgba(34, 55, 100, 0.2));
-}
-
-/* Custom Soft-Tone Badges (GitBook / SNI Style) */
-.badge {
-  font-size: 0.68rem !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.5px;
-  padding: 5px 10px !important;
-  border-radius: 6px !important;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.badge-sni {
-  background-color: rgba(250, 199, 24, 0.2) !important;
-  color: #8a6600 !important;
-  border: 1px solid rgba(250, 199, 24, 0.5);
-}
-
-[data-theme="dark"] .badge-sni {
-  background-color: rgba(250, 199, 24, 0.25) !important;
-  color: #ffcd2a !important;
-}
-
-.badge-investigaciones {
-  background-color: rgba(37, 99, 235, 0.1) !important;
-  color: #2563eb !important;
-  border: 1px solid rgba(37, 99, 235, 0.2);
-}
-
-.badge-visor {
-  background-color: rgba(147, 51, 234, 0.1) !important;
-  color: #9333ea !important;
-  border: 1px solid rgba(147, 51, 234, 0.2);
-}
-
-.badge-monitoreo {
-  background-color: rgba(234, 88, 12, 0.1) !important;
-  color: #ea580c !important;
-  border: 1px solid rgba(234, 88, 12, 0.2);
-}
-
-.badge-fichas {
-  background-color: rgba(22, 163, 74, 0.1) !important;
-  color: #16a34a !important;
-  border: 1px solid rgba(22, 163, 74, 0.2);
-}
-
-.badge-guia-tecnica {
-  background-color: rgba(13, 148, 136, 0.1) !important;
-  color: #0d9488 !important;
-  border: 1px solid rgba(13, 148, 136, 0.2);
-}
-
-.badge-guia-ciudadana {
-  background-color: rgba(9, 130, 200, 0.1) !important;
-  color: #0284c7 !important;
-  border: 1px solid rgba(9, 130, 200, 0.2);
-}
-
-.badge-estrategia {
-  background-color: rgba(180, 83, 9, 0.1) !important;
-  color: #b45309 !important;
-  border: 1px solid rgba(180, 83, 9, 0.2);
-}
-
-.badge-memorias {
-  background-color: rgba(71, 85, 105, 0.1) !important;
-  color: var(--text-light) !important;
-  border: 1px solid rgba(71, 85, 105, 0.2);
-}
-
-.badge-cuadernos {
-  background-color: rgba(79, 70, 229, 0.1) !important;
-  color: #4f46e5 !important;
-  border: 1px solid rgba(79, 70, 229, 0.2);
-}
-
-.badge-magma {
-  background-color: rgba(220, 38, 38, 0.1) !important;
-  color: #dc2626 !important;
-  border: 1px solid rgba(220, 38, 38, 0.2);
 }
 
 /* Card Body Content */
@@ -514,73 +432,20 @@ body.high-contrast .category-divider-line {
 }
 
 .card-resource-title {
-  font-size: 1.1rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  margin-top: 4px;
-  margin-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 6px;
   color: var(--text-main);
   line-height: 1.35;
 }
 
 .card-resource-text {
-  font-size: 0.88rem;
+  font-size: 0.62rem;
   color: var(--text-muted);
   line-height: 1.55;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
   flex-grow: 1;
-}
-
-/* Card Footer & Action Link */
-.card-footer-action {
-  margin-top: auto;
-  padding-top: 14px;
-  border-top: 1px dashed var(--border-color);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.card-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--color-primary-light);
-  background-color: transparent;
-  border: 1.5px solid var(--color-primary-light);
-  border-radius: 30px;
-  padding: 6px 16px;
-  gap: 6px;
-  transition: var(--transition-fast);
-}
-
-.btn-arrow-icon {
-  transition: transform 0.2s ease;
-}
-
-.card-btn:hover .btn-arrow-icon,
-.resource-card:hover .btn-arrow-icon {
-  transform: translateX(4px);
-}
-
-[data-theme="dark"] .card-btn {
-  color: var(--color-accent);
-  border-color: var(--color-accent);
-}
-
-.card-btn:hover {
-  background-color: var(--color-primary) !important;
-  color: var(--color-accent) !important;
-  border-color: var(--color-primary) !important;
-  text-decoration: none;
-}
-
-[data-theme="dark"] .card-btn:hover {
-  background-color: var(--color-primary-light) !important;
-  color: var(--color-accent) !important;
-  border-color: var(--color-primary-light) !important;
 }
 
 /* About Panel Accent */
@@ -671,12 +536,6 @@ body.high-contrast .category-divider-line {
 }
 
 /* High Contrast Override Overlays */
-body.high-contrast .badge {
-  background-color: #000000 !important;
-  color: #ffff00 !important;
-  border: 2px solid #ffff00 !important;
-}
-
 body.high-contrast .resource-card {
   border: 2px solid #000000 !important;
 }
