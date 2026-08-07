@@ -417,7 +417,7 @@ body.high-contrast .category-divider-line {
 }
 
 .card-resource-title {
-  font-size: 0.78rem;
+  font-size: 0.86rem;
   font-weight: 700;
   margin-top: 2px;
   margin-bottom: 6px;
@@ -426,7 +426,7 @@ body.high-contrast .category-divider-line {
 }
 
 .card-resource-text {
-  font-size: 0.62rem;
+  font-size: 0.70rem;
   color: var(--text-muted);
   line-height: 1.55;
   margin-bottom: 11px;
