@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 48 48">
+  <!-- dish (uniform-thickness annulus segment) -->
+  <path fill="#087283" d="M 2.58 22.60 A 17 17 0 0 1 31.02 14.98 L 27.13 18.87 A 11.5 11.5 0 0 0 7.89 24.02 Z"/>
+  <!-- pole from back of dish down to base -->
+  <path fill="none" stroke="#087283" stroke-width="2.6" stroke-linecap="round" d="M12 22 L15 40"/>
+  <!-- base feet -->
+  <path fill="none" stroke="#087283" stroke-width="2.6" stroke-linecap="round" d="M9 44 L15 40 L21 44"/>
+  <!-- feed horn arm from front curve toward focal point -->
+  <path fill="none" stroke="#087283" stroke-width="2" stroke-linecap="round" d="M18 21 L24 12"/>
+  <circle fill="#087283" cx="25" cy="10.3" r="1.9"/>
+  <!-- signal waves emanating from dish opening (upper right) -->
+  <path fill="none" stroke="#087283" stroke-width="2.2" stroke-linecap="round" d="M36 16 A11 11 0 0 0 27 3"/>
+  <path fill="none" stroke="#087283" stroke-width="2.2" stroke-linecap="round" d="M43 18 A19 19 0 0 0 26 -5"/>
+</svg>
