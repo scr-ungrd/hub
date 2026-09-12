@@ -161,7 +161,7 @@
     <div class="alert alert-warning-top animate-fade-in mb-4" role="region"
       aria-label="Aviso de desarrollo institucional">
       <div class="d-flex align-items-center justify-content-center text-center">
-        <svg class="me-2 flex-shrink-0 text-warning" width="18" height="18" viewBox="0 0 24 24" fill="none"
+        <svg class="me-2 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
           <line x1="12" y1="9" x2="12" y2="13"></line>
@@ -173,12 +173,15 @@
 
     <!-- Hero Banner Section -->
     <section class="hero-banner animate-fade-in" aria-labelledby="hero-title">
+      <svg class="hero-pattern" viewBox="0 0 1344 352" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0 300 C 250 240, 350 340, 600 260 S 950 180, 1344 250" stroke="rgba(255,255,255,0.10)" stroke-width="2" fill="none"/>
+        <path d="M0 340 C 260 280, 380 380, 650 300 S 1000 220, 1344 300" stroke="rgba(255,255,255,0.07)" stroke-width="2" fill="none"/>
+        <path d="M0 40 C 300 90, 420 10, 700 70 S 1050 130, 1344 60" stroke="rgba(255,255,255,0.07)" stroke-width="2" fill="none"/>
+      </svg>
       <div class="row align-items-center py-4 px-3 px-md-5">
         <div class="col-lg-8 col-md-12 text-white">
+          <p class="hero-eyebrow">Subdirección para el Conocimiento del Riesgo</p>
           <h1 class="hero-title" id="hero-title">Catálogo de accesos directos, herramientas, aplicaciones y publicaciones</h1>
-          <p class="hero-subtitle">
-            Subdirección para el Conocimiento del Riesgo
-          </p>
         </div>
         <div class="col-lg-4 d-none d-lg-flex justify-content-center">
           <div class="hero-ill-container">
@@ -211,30 +214,31 @@
           </span>
           <div>
             <h2 class="section-title h4 mb-1" id="sec-modulos-title">Secciones</h2>
-            <p class="section-description text-muted mb-0">Ingresa a los recursos de la Subdirección para el
+            <p class="section-description mb-0">Ingresa a los recursos de la Subdirección para el
               Conocimiento del Riesgo</p>
           </div>
         </div>
 
         <!-- Category Filter Pills -->
         <div class="filter-container" role="tablist" aria-label="Filtrar por categoría">
-          <button class="filter-btn" data-filter="accesos" role="tab" aria-selected="false">Accesos directos a
-            recursos institucionales</button>
-          <button class="filter-btn" data-filter="herramientas" role="tab" aria-selected="false">Herramientas y
-            aplicaciones</button>
-          <button class="filter-btn" data-filter="publicaciones" role="tab" aria-selected="false">Catalogo editorial
-            y publicaciones digitales</button>
-          <button class="filter-btn" data-filter="magma" role="tab" aria-selected="false">Museo Magma y Proyectos en
-            Conocimiento del Riesgo</button>
-          <button class="filter-btn" data-filter="memorias" role="tab" aria-selected="false">Memorias de eventos</button>
+          <button class="filter-btn" data-filter="accesos" role="tab" aria-selected="false">Accesos institucionales</button>
+          <button class="filter-btn" data-filter="herramientas" role="tab" aria-selected="false">Herramientas</button>
+          <button class="filter-btn" data-filter="publicaciones" role="tab" aria-selected="false">Publicaciones</button>
+          <button class="filter-btn" data-filter="magma" role="tab" aria-selected="false">Magma y Proyectos</button>
+          <button class="filter-btn" data-filter="memorias" role="tab" aria-selected="false">Memorias</button>
         </div>
       </div>
 
       <!-- CATEGORY 1: Accesos directos a recursos institucionales -->
       <div class="category-block mb-5" data-category-block="accesos">
         <div class="category-header mb-4">
-          <h3 class="category-title h4 mb-2">1. Accesos directos a recursos institucionales</h3>
-          <div class="category-divider-line"></div>
+          <div class="category-icon-badge">
+            <img src="assets/svg/world-check.svg" alt="" width="17" height="17">
+          </div>
+          <div>
+            <h3 class="category-title h4 mb-0">Accesos directos a recursos institucionales</h3>
+            <div class="category-divider-line"></div>
+          </div>
         </div>
         <div class="row g-4 row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
@@ -247,8 +251,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Página web principal de la UNGRD</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Página web principal de la UNGRD</h4>
+                <p class="card-resource-text">
                   Portal oficial de la Unidad Nacional para la Gestión del Riesgo de Desastres.
                 </p>
               </div>
@@ -264,8 +268,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">SNI</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">SNI</h4>
+                <p class="card-resource-text">
                   Plataforma oficial del Sistema Nacional de Información para la Gestión del Riesgo de Desastres en
                   Colombia (SNIGRD).
                 </p>
@@ -282,8 +286,8 @@
                   class="card-svg-icon" loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Página del conocimiento del riesgo</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Página del conocimiento del riesgo</h4>
+                <p class="card-resource-text">
                   Sitio web y recursos de la Subdirección para el Conocimiento del Riesgo (SCR).
                 </p>
               </div>
@@ -299,8 +303,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Biblioteca digital</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Biblioteca digital</h4>
+                <p class="card-resource-text">
                   Repositorio institucional de publicaciones, documentos técnicos e investigaciones en GRD.
                 </p>
               </div>
@@ -313,8 +317,13 @@
       <!-- CATEGORY 2: Herramientas y aplicaciones -->
       <div class="category-block mb-5" data-category-block="herramientas">
         <div class="category-header mb-4">
-          <h3 class="category-title h4 mb-2">2. Herramientas y aplicaciones</h3>
-          <div class="category-divider-line"></div>
+          <div class="category-icon-badge">
+            <img src="assets/svg/command-2.svg" alt="" width="17" height="17">
+          </div>
+          <div>
+            <h3 class="category-title h4 mb-0">Herramientas y aplicaciones</h3>
+            <div class="category-divider-line"></div>
+          </div>
         </div>
         <div class="row g-4 row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
@@ -327,8 +336,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Riesgo Implícito Volcán Galeras</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Riesgo Implícito Volcán Galeras</h4>
+                <p class="card-resource-text">
                   Visor interactivo para la evaluación del riesgo implícito asociado al volcán Galeras, con mapas
                   tridimensionales.
                 </p>
@@ -345,8 +354,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Incendios Colombia</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Incendios Colombia</h4>
+                <p class="card-resource-text">
                   Monitoreo y visualización en tiempo real de eventos de incendios en cobertura vegetal vía datos
                   satelitales.
                 </p>
@@ -360,8 +369,13 @@
       <!-- CATEGORY 3: Publicaciones digitales -->
       <div class="category-block mb-5" data-category-block="publicaciones">
         <div class="category-header mb-4">
-          <h3 class="category-title h4 mb-2">3. Catalogo editorial y publicaciones digitales</h3>
-          <div class="category-divider-line"></div>
+          <div class="category-icon-badge">
+            <img src="assets/svg/ibm-knowledge-catalog.svg" alt="" width="17" height="17">
+          </div>
+          <div>
+            <h3 class="category-title h4 mb-0">Catalogo editorial y publicaciones digitales</h3>
+            <div class="category-divider-line"></div>
+          </div>
         </div>
         <div class="row g-4 row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
@@ -374,8 +388,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Catálogo editorial SCR</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Catálogo editorial SCR</h4>
+                <p class="card-resource-text">
                   Catálogo completo de publicaciones e impresos editoriales desarrollados por la Subdirección.
                 </p>
               </div>
@@ -391,8 +405,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Libros de investigación</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Libros de investigación</h4>
+                <p class="card-resource-text">
                   Colección de la serie Investigaciones en Gestión del Riesgo de Desastres para Colombia.
                 </p>
               </div>
@@ -409,8 +423,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Aplicación SIG en GRD</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Aplicación SIG en GRD</h4>
+                <p class="card-resource-text">
                   Guía práctica y metodológica para la aplicación de Sistemas de Información Geográfica en GRD.
                 </p>
               </div>
@@ -426,8 +440,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Conociendo el Riesgo - Aguas de escorrentía</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Conociendo el Riesgo - Aguas de escorrentía</h4>
+                <p class="card-resource-text">
                   Guía ilustrada didáctica para comprender el riesgo derivado de aguas de escorrentía en laderas y su
                   mitigación.
                 </p>
@@ -444,8 +458,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Cuadernos reproducibles</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Cuadernos reproducibles</h4>
+                <p class="card-resource-text">
                   Colección de cuadernos de código abierto sobre análisis de riesgos de desastres.
                 </p>
               </div>
@@ -461,8 +475,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Fichas departamentales</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Fichas departamentales</h4>
+                <p class="card-resource-text">
                   Escenarios de riesgo por departamento para apoyar la planificación territorial y toma de
                   decisiones.
                 </p>
@@ -479,8 +493,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Estado de la ciencia de los desastres en Colombia</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Estado de la ciencia de los desastres en Colombia</h4>
+                <p class="card-resource-text">
                   Panorama interactivo de indicadores de ciencia y tecnología de Colombia en GRD.
                 </p>
               </div>
@@ -493,21 +507,26 @@
       <!-- CATEGORY 4: Museo Magma y Proyectos en Conocimiento del Riesgo -->
       <div class="category-block mb-5" data-category-block="magma">
         <div class="category-header mb-4">
-          <h3 class="category-title h4 mb-2">4. Museo Magma y Proyectos en Conocimiento del Riesgo</h3>
-          <div class="category-divider-line"></div>
+          <div class="category-icon-badge">
+            <img src="assets/svg/volcano.svg" alt="" width="17" height="17">
+          </div>
+          <div>
+            <h3 class="category-title h4 mb-0">Museo Magma y Proyectos en Conocimiento del Riesgo</h3>
+            <div class="category-divider-line"></div>
+          </div>
         </div>
         <div class="row g-4 row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
           <!-- CARD: Magma -->
           <div class="col resource-card-item" data-category="magma"
             data-search-terms="magma museo interactivo del riesgo proyectos portal gestion riesgo">
-            <a class="resource-card" href="https://portal.gestiondelriesgo.gov.co/magma/" target="_blank" rel="noopener" aria-label="Abrir portal Magma en una nueva pestaña">
+            <a class="resource-card resource-card--brand" href="https://portal.gestiondelriesgo.gov.co/magma/" target="_blank" rel="noopener" aria-label="Abrir portal Magma en una nueva pestaña">
               <div class="card-icon-centered">
                 <img src="assets/logos/magma-logo-teal.png" alt="Logotipo Magma" class="card-svg-icon card-svg-icon-magma"
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <p class="card-resource-text text-center">
+                <p class="card-resource-text">
                   Museo Interactivo del Riesgo
                 </p>
               </div>
@@ -523,8 +542,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Mapas comunitarios</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Mapas comunitarios</h4>
+                <p class="card-resource-text">
                   Cartografía social participativa para el conocimiento del riesgo desde las comunidades.
                 </p>
               </div>
@@ -537,8 +556,13 @@
       <!-- CATEGORY 5: Memorias de eventos -->
       <div class="category-block mb-5" data-category-block="memorias">
         <div class="category-header mb-4">
-          <h3 class="category-title h4 mb-2">5. Memorias de eventos</h3>
-          <div class="category-divider-line"></div>
+          <div class="category-icon-badge">
+            <img src="assets/svg/book-pencil.svg" alt="" width="17" height="17">
+          </div>
+          <div>
+            <h3 class="category-title h4 mb-0">Memorias de eventos</h3>
+            <div class="category-divider-line"></div>
+          </div>
         </div>
         <div class="row g-4 row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
@@ -551,8 +575,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Memorias PN26</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Memorias PN26</h4>
+                <p class="card-resource-text">
                   Sistematización de aportes del Proceso Nacional de Conocimiento para la Gestión del Riesgo de
                   Desastres 2026.
                 </p>
@@ -569,8 +593,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Memorias IDRiM 2024</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Memorias IDRiM 2024</h4>
+                <p class="card-resource-text">
                   Memorias y ponencias científicas del Encuentro de la Sociedad Internacional para la Gestión Integrada
                   (IDRiM 2024).
                 </p>
@@ -587,8 +611,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Natech 2022</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Natech 2022</h4>
+                <p class="card-resource-text">
                   Sexto Simposio Internacional de accidentes tecnológicos desencadenados por eventos de origen
                   natural: una mirada global a la gestión del riesgo Natech.
                 </p>
@@ -605,8 +629,8 @@
                   loading="lazy">
               </div>
               <div class="card-body-content">
-                <h4 class="card-resource-title text-center">Taller Radares Meteorológicos</h4>
-                <p class="card-resource-text text-center">
+                <h4 class="card-resource-title">Taller Radares Meteorológicos</h4>
+                <p class="card-resource-text">
                   Del dato al impacto: Zarr y la nueva era de datos abiertos en la nube para el análisis de radares
                   meteorológicos.
                 </p>
