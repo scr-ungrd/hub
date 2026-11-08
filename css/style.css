@@ -190,13 +190,18 @@ main {
   margin-top: 15px;
 }
 
-.hero-pattern {
+.hero-network {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
   pointer-events: none;
+}
+
+.hero-banner > .row {
+  position: relative;
+  z-index: 1;
+  min-height: 230px;
 }
 
 .hero-eyebrow {
@@ -218,22 +223,6 @@ main {
   line-height: 1.22;
   margin-bottom: 0;
   letter-spacing: -0.6px;
-}
-
-.hero-ill-container {
-  background-color: rgba(255, 255, 255, 0.07);
-  padding: 20px;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 250px;
-  backdrop-filter: blur(5px);
-}
-
-.hero-ill {
-  max-height: 150px;
 }
 
 /* Section Header (Scannability Icon + Description) */
@@ -421,22 +410,28 @@ body.high-contrast .category-divider-line {
 /* Standalone SVG Icon (No Box) */
 .card-icon-centered {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   margin: 0 0 14px 0;
   width: 100%;
+  height: 32px; /* altura original del ícono: el aumento del 10% sobresale sin alterar el tamaño de la card */
+}
+
+.card-icon-centered:has(.card-svg-icon-magma) {
+  height: 134px;
 }
 
 .card-svg-icon {
-  width: 32px;
-  height: 32px;
+  flex: none;
+  width: 35.2px;  /* 32px + 10% */
+  height: 35.2px;
   object-fit: contain;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.06));
 }
 
 .card-svg-icon-magma {
-  width: 134px;
-  height: 134px;
+  width: 147.4px;  /* 134px + 10% */
+  height: 147.4px;
 }
 
 /* Card Body Content */
