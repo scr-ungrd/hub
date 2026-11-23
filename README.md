@@ -1,138 +1,183 @@
 # HUB SCR - UNGRD
 
-[![Estado de desarrollo](https://img.shields.io/badge/Estado-En_Desarrollo-orange.svg)](https://github.com/scr-ungrd/hub)
-[![Licencia](https://img.shields.io/badge/Licencia-Gobierno_Abierto-blue.svg)](LICENSE)
-[![Organización](https://img.shields.io/badge/Entidad-UNGRD--SCR-223764.svg)](https://portal.gestiondelriesgo.gov.co)
+[![Estado](https://img.shields.io/badge/Estado-Fase_piloto-orange.svg)](https://scr-ungrd.github.io/hub/acerca-de.html)
+[![Sitio](https://img.shields.io/badge/Sitio-scr--ungrd.github.io%2Fhub-213362.svg)](https://scr-ungrd.github.io/hub/)
+[![Organización](https://img.shields.io/badge/Entidad-UNGRD--SCR-213362.svg)](https://portal.gestiondelriesgo.gov.co)
 
-Catálogo web institucional y portal centralizado de herramientas digitales, aplicaciones geográficas, investigaciones y publicaciones desarrolladas por la **Subdirección para el Conocimiento del Riesgo (SCR)** de la **Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD)** de Colombia.
+Catálogo de accesos directos, herramientas, aplicaciones y publicaciones de la **Subdirección para el Conocimiento del Riesgo (SCR)** de la **Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD)** de Colombia.
 
----
+**Sitio:** <https://scr-ungrd.github.io/hub/> · **Acerca de:** <https://scr-ungrd.github.io/hub/acerca-de.html>
 
-## 📌 Tabla de Contenido
-
-- [Visión General](#-visión-general)
-- [Características Principales](#-características-principales)
-- [Categorías de Recursos](#-categorías-de-recursos)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Tecnologías Utilizadas](#-tecnologías-utilizadas)
-- [Despliegue y Uso Local](#-despliegue-y-uso-local)
-- [Accesibilidad y Adaptabilidad](#-accesibilidad-y-adaptabilidad)
-- [Créditos e Institucionalidad](#-créditos-e-institucionalidad)
+> Este hub es un espacio de trabajo institucional de acceso público y en fase de piloto. No reemplaza la información del dominio institucional [gestiondelriesgo.gov.co](https://portal.gestiondelriesgo.gov.co).
 
 ---
 
-## 🌐 Visión General
+## 📌 Tabla de contenido
 
-El **HUB SCR** sirve como punto de acceso único para la ciudadanía, investigadores, entidades gubernamentales y actores del Sistema Nacional de Gestión del Riesgo de Desastres (SNGRD). Su propósito fundamental es facilitar la consulta y apropiación social del conocimiento del riesgo mediante una interfaz moderna, accesible e intuitiva.
-
----
-
-## ✨ Características Principales
-
-- 🔍 **Buscador en Tiempo Real**: Motor de búsqueda interactivo por palabras clave que filtra instantáneamente títulos, descripciones y etiquetas técnicas.
-- 🗂️ **Filtros por Categoría**: Organización modular distribuida en 5 categorías institucionales.
-- 🌓 **Modo Oscuro / Claro**: Alternador de tema visual adaptativo con almacenamiento de preferencia local (`localStorage`).
-- 👁️ **Herramientas de Accesibilidad**:
-  - Ajuste de tamaño de fuente (Aumento, Reducción y Restablecimiento).
-  - Modo de alto contraste para personas con visibilidad reducida.
-- 📱 **Diseño Responsive & Fluid**: Adaptación perfecta a dispositivos móviles, tabletas y computadores de escritorio.
-- ♿ **Estándares ARIA & HTML5 Semántico**: Optimizado para lectores de pantalla y navegación por teclado.
+- [Visión general](#-visión-general)
+- [Características principales](#-características-principales)
+- [Categorías de recursos](#-categorías-de-recursos)
+- [Estructura del proyecto](#-estructura-del-proyecto)
+- [Tecnologías utilizadas](#-tecnologías-utilizadas)
+- [Despliegue y uso local](#-despliegue-y-uso-local)
+- [Accesibilidad](#-accesibilidad)
+- [Cómo solicitar un cambio](#-cómo-solicitar-un-cambio)
+- [Equipo](#-equipo)
+- [Créditos e institucionalidad](#-créditos-e-institucionalidad)
 
 ---
 
-## 📚 Categorías de Recursos
+## 🌐 Visión general
 
-El catálogo agrupa los módulos digitales en 5 categorías fundamentales:
-
-1. **Accesos directos a recursos institucionales**
-   - *Página web principal de la UNGRD* (Portal Oficial)
-   - *SNI - Sistema Nacional de Información* (SNIGRD)
-   - *Página del conocimiento del riesgo* (Portal Google Sites SCR)
-   - *Biblioteca digital* (Repositorio institucional)
-
-2. **Herramientas y aplicaciones**
-   - *Riesgo Implícito Volcán Galeras* (Visor interactivo 3D)
-   - *Incendios Colombia* (Monitoreo satelital en tiempo real)
-
-3. **Publicaciones digitales**
-   - *Libros de investigación* (Colección científica de estudios de riesgo)
-   - *Fichas departamentales* (Escenarios de riesgo por departamento)
-   - *Estrategia Nacional de Ciencia para la GRD* (Hoja de ruta y CTI)
-   - *Aplicación SIG en GRD* (Guía técnica y metodológica)
-   - *Conociendo el Riesgo - Aguas de escorrentía* (Guía ciudadana ilustrada)
-
-4. **Catálogo editorial**
-   - *Catálogo editorial* (Compendio de publicaciones e impresos editoriales)
-
-5. **Memorias institucionales**
-   - *Memorias PN26* (Proceso Nacional de Conocimiento)
-   - *Memorias IDRiM 2024* (Encuentro Internacional de Gestión Integrada del Riesgo)
+El **HUB SCR** es un punto de acceso único a los repositorios de código, visores, herramientas digitales, investigaciones y publicaciones de la SCR. Se dirige a la ciudadanía, a investigadores, a entidades gubernamentales y a los actores del Sistema Nacional de Gestión del Riesgo de Desastres (SNGRD), y busca facilitar la consulta y la apropiación social del conocimiento del riesgo.
 
 ---
 
-## 📁 Estructura del Proyecto
+## ✨ Características principales
+
+- 🔍 **Buscador en tiempo real**: filtra al instante por título, descripción y etiquetas de cada recurso. Atajo de teclado: `Ctrl K` (o `⌘ K` en macOS).
+- 🗂️ **Filtros por categoría**: cinco botones, uno por categoría.
+- 🌓 **Modo claro y oscuro**: la preferencia se guarda en el navegador (`localStorage`).
+- 🕸️ **Portada con red animada de nodos** (`js/hero-network.js`).
+- ℹ️ **Página «Acerca de»** (`acerca-de.html`): qué es el HUB, quién lo publica, estado, accesibilidad, tecnología, equipo y cómo solicitar un cambio.
+- 🧭 **Pie de página común** con los demás sitios de la SCR (Catálogo Editorial, Investigaciones en GRD, Fichas Departamentales y Cuadernos Reproducibles), en el azul `#213362` y el amarillo `#ffcd00` del Manual de Identidad Visual UNGRD 2024.
+- 📱 **Diseño adaptable** a celulares, tabletas y computadores.
+
+---
+
+## 📚 Categorías de recursos
+
+El catálogo agrupa 21 recursos en cinco categorías:
+
+1. **Accesos directos a recursos institucionales** (4)
+   - Página web principal de la UNGRD
+   - SNI: Sistema Nacional de Información para la Gestión del Riesgo de Desastres
+   - Página del conocimiento del riesgo
+   - Biblioteca digital
+
+2. **Herramientas y aplicaciones** (4)
+   - Riesgo Implícito Volcán Galeras
+   - Incendios Colombia
+   - Escenarios de incendios forestales
+   - Escenarios Incendios Forestales ante la ocurrencia del Fenómeno El Niño 2026 - 2027 (app abierta)
+
+3. **Catálogo editorial y publicaciones digitales** (7)
+   - Catálogo editorial SCR
+   - Libros de investigación
+   - Aplicación SIG en GRD
+   - Conociendo el Riesgo - Aguas de escorrentía
+   - Cuadernos reproducibles
+   - Fichas departamentales
+   - Estado de la ciencia de los desastres en Colombia
+
+4. **Museo Magma y proyectos en conocimiento del riesgo** (2)
+   - Magma: Museo Interactivo del Riesgo
+   - Mapas comunitarios
+
+5. **Memorias de eventos** (4)
+   - Memorias PN26
+   - Memorias IDRiM 2024
+   - Natech 2022
+   - Taller Radares Meteorológicos
+
+---
+
+## 📁 Estructura del proyecto
 
 ```text
 hub/
 ├── assets/
-│   ├── illustrations/     # Ilustraciones y gráficos principales (p. ej. sig.png)
-│   ├── logos/             # Logotipos institucionales oficial UNGRD y SCR
-│   └── svg/               # Vectoriales de iconos para módulos e interfaz
+│   ├── illustrations/     # Ilustraciones de las tarjetas
+│   ├── logos/             # Logotipo UNGRD, favicon y logos de proyectos
+│   └── svg/               # Íconos vectoriales de las tarjetas
 ├── css/
-│   ├── variables.css      # Sistema de diseño, paleta de colores y variables CSS
-│   ├── style.css          # Estilos generales del HUB, tarjetas y maquetación
-│   └── animations.css     # Animaciones y transiciones de interfaz
+│   ├── variables.css      # Paleta de colores, tipografía y variables CSS
+│   ├── style.css          # Estilos del HUB, tarjetas, pie de página y página «Acerca de»
+│   └── animations.css     # Animaciones y transiciones
 ├── js/
-│   └── main.js            # Lógica del motor de búsqueda, filtros y accesibilidad
-├── index.html             # Estructura principal y maquetación del portal
-└── README.md              # Documentación técnica del proyecto
+│   ├── main.js            # Buscador, filtros, atajo Ctrl K y modo claro/oscuro
+│   └── hero-network.js    # Red animada de nodos de la portada
+├── index.html             # Portada y catálogo de recursos
+├── acerca-de.html         # Página «Acerca de»
+└── README.md              # Este documento
 ```
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Tecnologías utilizadas
 
-- **HTML5**: Maquetación semántica y estructura accesible.
-- **CSS3**: Estilos personalizados con variables nativas, Flexbox y CSS Grid.
-- **JavaScript (ES6+)**: Manipulación del DOM, filtros dinámicos y manejo de accesibilidad.
-- **Bootstrap 5**: Sistema de grilla y utilidades de maquetación responsive.
+- **HTML5**: estructura semántica y accesible.
+- **CSS3**: variables nativas, Flexbox y CSS Grid.
+- **JavaScript (ES6+)**: buscador, filtros, modo claro/oscuro y animación de la portada.
+- **Bootstrap 5.3**: grilla y utilidades de maquetación.
+- Tipografías **Outfit** e **Inter** (Google Fonts).
+
+No hay compiladores ni dependencias de construcción.
 
 ---
 
-## 🚀 Despliegue y Uso Local
+## 🚀 Despliegue y uso local
 
-Para ejecutar y probar la aplicación localmente no se requieren compiladores ni dependencias externas:
+**Despliegue:** el sitio se publica con GitHub Pages desde la rama `main`. Cada cambio que se integra en `main` queda publicado en <https://scr-ungrd.github.io/hub/> en pocos minutos.
 
-1. **Clonar el repositorio**:
+**Uso local:**
+
+1. Clona el repositorio:
    ```bash
    git clone https://github.com/scr-ungrd/hub.git
    cd hub
    ```
 
-2. **Ejecutar un servidor local**:
-   Puedes abrir directamente el archivo `index.html` en cualquier navegador web moderno, o iniciar un servidor de desarrollo HTTP ligero:
-
-   *Con Python 3*:
+2. Abre `index.html` en el navegador, o inicia un servidor local:
    ```bash
    python3 -m http.server 8000
    ```
-   Luego abre en tu navegador `http://localhost:8000`.
+   y visita `http://localhost:8000`.
 
 ---
 
-## ♿ Accesibilidad y Adaptabilidad
+## ♿ Accesibilidad
 
-El HUB cumple con las pautas de accesibilidad para el contenido web (WCAG):
-- Contraste de color optimizado tanto en temas claros como oscuros.
-- Identificadores únicos (`id`) e hipervínculos descriptivos para lectores de pantalla.
-- Navegación lógica mediante la tecla `TAB`.
+- Modo claro y oscuro.
+- Navegación con teclado, enlace para saltar al contenido y etiquetas ARIA para lectores de pantalla.
+- Contraste de color revisado según las pautas WCAG.
 
 ---
 
-## 🏢 Créditos e Institucionalidad
+## ✉️ Cómo solicitar un cambio
+
+Para pedir un ajuste (corregir un enlace, actualizar la descripción de un recurso, agregar o retirar una tarjeta, o reportar un error), abre una solicitud (*issue*) en este repositorio. Necesitas una cuenta de GitHub.
+
+1. Entra a <https://github.com/scr-ungrd/hub/issues/new>.
+2. En el título, resume el cambio. Por ejemplo: «Actualizar el enlace de Memorias PN26».
+3. En la descripción, indica qué recurso o sección quieres cambiar, qué cambio propones, por qué, y el enlace correcto si lo hay.
+4. Haz clic en **Submit new issue**. El equipo revisará la solicitud y responderá en la misma página.
+
+Si sabes trabajar con Git, también puedes proponer el cambio directamente: haz un *fork*, edita los archivos y abre un [*pull request*](https://github.com/scr-ungrd/hub/pulls) hacia `main`.
+
+---
+
+## 👥 Equipo
+
+**Líder del proyecto**
+
+- Mauricio Romero Torres · GitHub: [mromerot](https://github.com/mromerot) · Contrato de prestación de servicios n.º 9677-PPAL001-1552-2025
+- Jorge Alpala · GitHub: [jorgealpala](https://github.com/jorgealpala) · Contrato de prestación de servicios n.º 9677-PPAL001-1240-2025
+
+**Equipo técnico**
+
+- Estefanía Pachón · GitHub: [Ing-Estefania-Pachon](https://github.com/Ing-Estefania-Pachon) · Contrato de prestación de servicios n.º 9677-PPAL001-201-2026
+
+---
+
+## 🏢 Créditos e institucionalidad
 
 **Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD)**  
 *Subdirección para el Conocimiento del Riesgo (SCR)*  
-República de Colombia  
+República de Colombia
 
 🌐 [portal.gestiondelriesgo.gov.co](https://portal.gestiondelriesgo.gov.co)
+
+El repositorio aún no declara una licencia de uso.
+
+© 2026 Subdirección para el Conocimiento del Riesgo - UNGRD. Todos los derechos reservados.

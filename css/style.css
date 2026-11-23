@@ -628,12 +628,13 @@ body.high-contrast #scr-footer a { color: #ffff00 !important; }
    todo un punto más pequeño (calc(... - 1pt)) e interlineado sencillo (1.2) */
 .about-page { max-width: 860px; font-family: var(--font-primary); line-height: 1.2; }
 .about-page :is(h1, h2, p, li, dt, dd, strong, a, .alert) { font-family: var(--font-primary); line-height: 1.2; }
-.about-page .about-title { font-size: calc(2.5rem - 1pt); font-weight: 700; color: var(--text-main); margin-bottom: .35rem; }
-.about-page .about-subtitle { color: var(--text-muted); font-size: calc(1.15rem - 1pt); margin-bottom: 2rem; }
+.about-page .about-title { font-size: calc(1.4rem - 1pt); font-weight: 700; color: var(--text-main); margin-bottom: .35rem; }
+.about-page .about-subtitle { color: var(--text-muted); font-size: calc(1rem - 1pt); margin-bottom: 2rem; }
 .about-page h2 { font-size: calc(1.4rem - 1pt); font-weight: 700; color: var(--text-main); margin: 2rem 0 .6rem; }
 .about-page :is(p:not(.about-subtitle), li, dt, dd, .alert) { font-size: calc(1rem - 1pt); color: var(--text-main); }
 .about-page .alert { font-weight: 400; }
 .about-page li { margin-bottom: .25rem; }
+.about-page code { font-size: calc(1rem - 1pt); color: var(--text-main); background: rgba(127,127,127,.12); padding: 0 .3em; border-radius: 4px; }
 .about-page a { color: var(--color-primary-light); }
 [data-theme="dark"] .about-page a { color: var(--color-accent); }
 .about-team dt { color: var(--color-primary-light); font-weight: 700; margin-top: 1rem; }
