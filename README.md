@@ -35,6 +35,7 @@ El **HUB SCR** es un punto de acceso único a los repositorios de código, visor
 
 ## ✨ Características principales
 
+- 🧭 **Barra de navegación institucional**: firma UNGRD en blanco | HUB SCR, secciones (Inicio, Acerca de), íconos de GitHub y Traducir, buscador y botón de tema, sobre el azul `#213362` con franja amarilla, igual que en los demás sitios de la SCR.
 - 🔍 **Buscador en tiempo real**: filtra al instante por título, descripción y etiquetas de cada recurso. Atajo de teclado: `Ctrl K` (o `⌘ K` en macOS).
 - 🗂️ **Filtros por categoría**: cinco botones, uno por categoría.
 - 🌓 **Modo claro y oscuro**: la preferencia se guarda en el navegador (`localStorage`).

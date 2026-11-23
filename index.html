@@ -59,52 +59,42 @@
   <!-- Skip Link for Keyboard Accessibility (WCAG 2.4.1) -->
   <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
-  <!-- Header (GitBook Inspired) -->
+  <!-- Barra de navegación institucional (modelo: Cuadernos Reproducibles):
+       firma UNGRD | nombre · secciones · íconos · buscador · tema -->
   <header class="navbar navbar-expand-lg sticky-top main-header" role="banner">
     <div class="container">
+      <!-- Botón de menú (celular) -->
+      <button class="navbar-toggler hub-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hub-nav"
+        aria-controls="hub-nav" aria-expanded="false" aria-label="Abrir menú">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg>
+      </button>
+
       <!-- Brand Logo & Titles -->
-      <a class="navbar-brand d-flex align-items-center me-3" href="#" aria-label="Inicio HUB SCR UNGRD">
-        <img src="assets/logos/Logo-UNGRD.png" alt="Logotipo Oficial UNGRD" class="header-logo me-2" loading="eager">
-        <div class="brand-text d-none d-sm-block">
+      <a class="navbar-brand d-flex align-items-center me-4" href="#" aria-label="Inicio HUB SCR UNGRD">
+        <img src="assets/logos/logo-ungrd-blanco.svg" alt="UNGRD - Unidad Nacional para la Gestión del Riesgo de Desastres" class="header-logo" loading="eager">
+        <span class="brand-divider" aria-hidden="true"></span>
+        <div class="brand-text">
           <span class="hub-title d-block">HUB SCR</span>
-          <span class="hub-subtitle d-block">Catálogo de herramientas, aplicaciones y publicaciones</span>
+          <span class="hub-subtitle d-none d-xl-block">Catálogo de herramientas, aplicaciones y publicaciones</span>
         </div>
       </a>
 
-      <!-- Center Search Bar (Always visible on Desktop) -->
-      <div class="header-search-wrapper d-none d-md-flex flex-grow-1 mx-lg-5 mx-3">
-        <form class="w-100" role="search" onsubmit="event.preventDefault();">
-          <div class="position-relative">
-            <span class="search-icon-placeholder" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-            </span>
-            <input type="search" id="search-input" class="form-control search-input search-input-focus"
-              placeholder="Buscar recursos (ej. Galeras, SIG, Fichas...)" aria-label="Buscar recursos en el Hub">
-            <span class="search-kbd-shortcut d-none d-lg-inline-block" aria-hidden="true">Ctrl K</span>
-          </div>
-        </form>
-      </div>
+      <!-- Secciones -->
+      <nav class="collapse navbar-collapse flex-grow-0 hub-nav" id="hub-nav" aria-label="Navegación principal">
+        <ul class="navbar-nav gap-lg-3">
+          <li class="nav-item">
+            <a class="nav-link active-link" href="#" aria-current="page">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="acerca-de.html">Acerca de</a>
+          </li>
+        </ul>
+      </nav>
 
-      <!-- Right Controls & Navigation Toggle -->
+      <!-- Íconos, buscador y tema (derecha) -->
       <div class="d-flex align-items-center ms-auto">
-        <!-- Navigation Links -->
-        <nav class="d-none d-lg-flex me-3" aria-label="Navegación principal">
-          <ul class="navbar-nav flex-row gap-3">
-            <li class="nav-item">
-              <a class="nav-link active-link" href="#" aria-current="page">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="acerca-de.html">Acerca de</a>
-            </li>
-          </ul>
-        </nav>
-
         <!-- GitHub Repository Link -->
-        <a class="btn btn-header-icon me-2" href="https://github.com/scr-ungrd/hub" target="_blank" rel="noopener"
+        <a class="btn btn-header-icon me-1" href="https://github.com/scr-ungrd/hub" target="_blank" rel="noopener"
           aria-label="Ver repositorio en GitHub">
           <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
             <path
@@ -113,8 +103,44 @@
           </svg>
         </a>
 
+        <!-- Traducir al inglés -->
+        <a class="btn btn-header-icon me-1" href="https://translate.google.com/translate?sl=es&amp;tl=en&amp;u=https://scr-ungrd.github.io/hub/" target="_blank" rel="noopener noreferrer"
+          aria-label="Translate to English">
+          <svg width="19" height="19" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+            <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+          </svg>
+        </a>
+
+        <!-- Buscador (escritorio), antes del botón de tema -->
+        <div class="header-search-wrapper d-none d-md-flex mx-2">
+          <form class="w-100" role="search" onsubmit="event.preventDefault();">
+            <div class="position-relative">
+              <span class="search-icon-placeholder" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </span>
+              <input type="search" id="search-input" class="form-control search-input search-input-focus"
+                placeholder="Buscar" aria-label="Buscar recursos en el Hub">
+              <span class="search-kbd-shortcut d-none d-lg-inline-block" aria-hidden="true">Ctrl K</span>
+            </div>
+          </form>
+        </div>
+
+        <!-- Search button for mobile -->
+        <button class="btn btn-header-icon d-md-none me-2" id="mobile-search-btn" aria-label="Buscar en el sitio">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
         <!-- Dark Mode Toggle -->
-        <button class="btn btn-header-icon me-2" id="theme-toggle-btn" aria-label="Cambiar tema de color">
+        <button class="btn btn-header-icon btn-theme-toggle ms-1" id="theme-toggle-btn" aria-label="Cambiar tema de color">
           <!-- Light Mode Icon (Sun) -->
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="theme-icon-sun">
@@ -132,15 +158,6 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="theme-icon-moon d-none">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-
-        <!-- Search button for mobile -->
-        <button class="btn btn-header-icon d-md-none me-2" id="mobile-search-btn" aria-label="Buscar en el sitio">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
         </button>
       </div>
