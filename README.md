@@ -40,7 +40,7 @@ El **HUB SCR** es un punto de acceso único a los repositorios de código, visor
 - 🌓 **Modo claro y oscuro**: la preferencia se guarda en el navegador (`localStorage`).
 - 🕸️ **Portada con red animada de nodos** (`js/hero-network.js`).
 - ℹ️ **Página «Acerca de»** (`acerca-de.html`): qué es el HUB, quién lo publica, estado, accesibilidad, tecnología, equipo y cómo solicitar un cambio.
-- 🧭 **Pie de página común** con los demás sitios de la SCR (Catálogo Editorial, Investigaciones en GRD, Fichas Departamentales y Cuadernos Reproducibles), en el azul `#213362` y el amarillo `#ffcd00` del Manual de Identidad Visual UNGRD 2024.
+- 🧭 **Pie de página** con el mismo diseño que los demás sitios de la SCR (Catálogo Editorial, Investigaciones en GRD, Fichas Departamentales y Cuadernos Reproducibles), en el azul `#213362` y el amarillo `#ffcd00` del Manual de Identidad Visual UNGRD 2024.
 - 📱 **Diseño adaptable** a celulares, tabletas y computadores.
 
 ---

@@ -610,7 +610,7 @@ body.high-contrast .search-input {
    Azul #213362 y amarillo #ffcd00 del Manual de Identidad Visual UNGRD 2024
    ============================================================ */
 #scr-footer { background: #213362; color: #fff; border-top: 4px solid #ffcd00; margin-top: 3rem; }
-#scr-footer .scr-footer__grid { max-width: 1200px; margin: 0 auto; padding: 2.5rem 1.5rem 2rem; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2rem; }
+#scr-footer .scr-footer__grid { max-width: 1200px; margin: 0 auto; padding: 2.5rem 1.5rem 2rem; display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; }
 #scr-footer p { margin: 0; color: rgba(255,255,255,.85); font-size: .95rem; line-height: 1.6; }
 #scr-footer .scr-footer__title { font-size: 1.2rem; font-weight: 700; color: #fff; margin: 0 0 .6rem; line-height: 1.3; }
 #scr-footer .scr-footer__head { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #ffcd00; margin: 0 0 .75rem; }
