@@ -624,14 +624,21 @@ body.high-contrast .search-input {
 body.high-contrast #scr-footer { background: #000 !important; border-top-color: #ffff00 !important; }
 body.high-contrast #scr-footer a { color: #ffff00 !important; }
 
-/* Página "Acerca de" */
-.about-page { max-width: 860px; }
-.about-page .about-title { font-family: var(--font-primary); font-weight: 700; color: var(--text-main); margin-bottom: .25rem; }
-.about-page .about-subtitle { color: var(--text-muted); font-size: 1.15rem; margin-bottom: 2rem; }
-.about-page h2 { font-family: var(--font-primary); font-size: 1.4rem; font-weight: 700; color: var(--text-main); margin: 2.25rem 0 .75rem; }
-.about-page p, .about-page li, .about-page dd { color: var(--text-main); line-height: 1.75; }
+/* Página "Acerca de": una sola familia (Outfit), un tamaño para todo el texto,
+   todo un punto más pequeño (calc(... - 1pt)) e interlineado sencillo (1.2) */
+.about-page { max-width: 860px; font-family: var(--font-primary); line-height: 1.2; }
+.about-page :is(h1, h2, p, li, dt, dd, strong, a, .alert) { font-family: var(--font-primary); line-height: 1.2; }
+.about-page .about-title { font-size: calc(2.5rem - 1pt); font-weight: 700; color: var(--text-main); margin-bottom: .35rem; }
+.about-page .about-subtitle { color: var(--text-muted); font-size: calc(1.15rem - 1pt); margin-bottom: 2rem; }
+.about-page h2 { font-size: calc(1.4rem - 1pt); font-weight: 700; color: var(--text-main); margin: 2rem 0 .6rem; }
+.about-page :is(p:not(.about-subtitle), li, dt, dd, .alert) { font-size: calc(1rem - 1pt); color: var(--text-main); }
+.about-page .alert { font-weight: 400; }
+.about-page li { margin-bottom: .25rem; }
 .about-page a { color: var(--color-primary-light); }
 [data-theme="dark"] .about-page a { color: var(--color-accent); }
 .about-team dt { color: var(--color-primary-light); font-weight: 700; margin-top: 1rem; }
 [data-theme="dark"] .about-team dt { color: var(--color-accent); }
-.about-team dd { margin: .25rem 0 0 1.5rem; }
+.about-team dd { margin: .35rem 0 0 1.5rem; }
+
+/* Encabezado: "HUB SCR" centrado respecto al subtítulo */
+.brand-text { text-align: center; }
