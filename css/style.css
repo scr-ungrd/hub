@@ -691,7 +691,8 @@ body.high-contrast .main-header { background-color: #000 !important; box-shadow:
 }
 .main-header .brand-text .hub-title { font-weight: 400; }
 .main-header .brand-text .hub-subtitle { font-weight: 700; border-bottom: 2px solid #fff; padding-bottom: 1px; display: inline-block !important; }
-@media (max-width: 1199.98px) { .main-header .brand-text .hub-subtitle { display: none !important; } .main-header .brand-text .hub-title { font-weight: 700; border-bottom: 2px solid #fff; display: inline-block !important; padding-bottom: 1px; } }
+/* Nombre en una sola línea ("HUB SCR"): negrita y subrayado, como la segunda línea de los demás sitios */
+.main-header .brand-text .hub-title { font-weight: 700; border-bottom: 2px solid #fff; display: inline-block !important; padding-bottom: 1px; }
 /* Botón ☰ y menú desplegable en celular */
 .main-header .hub-toggler { color: #fff; border: 1px solid rgba(255,255,255,.5); padding: .2rem .4rem; margin-right: .5rem; order: -1; }
 .main-header .hub-toggler:focus { box-shadow: 0 0 0 2px #ffcd00; }
